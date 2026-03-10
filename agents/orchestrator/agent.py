@@ -93,7 +93,7 @@ escalation_checker = EscalationChecker(name="escalation_checker")
 research_loop = LoopAgent(
     name="research_loop",
     description="Iteratively researches and judges until quality standards are met.",
-    sub_agents=[researcher, judge, escalation_checker],
+    sub_agents=[researcher, judge, escalation_checker], 
     max_iterations=3,
 )
 
